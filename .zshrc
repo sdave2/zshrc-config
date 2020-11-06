@@ -126,3 +126,6 @@ alias trash='gio trash'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# Alias helm3 to helm to take advantage of zsh helm plugin
+alias helm='helm3'
