@@ -80,7 +80,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git docker docker-machine microk8s kubectl helm)
+plugins=(git docker docker-machine microk8s kubectl helm pip pipenv)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -128,4 +128,4 @@ alias trash='gio trash'
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # Alias helm3 to helm to take advantage of zsh helm plugin
-alias helm='helm3'
+#alias helm='helm3'
