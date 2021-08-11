@@ -6,7 +6,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:/snap/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:/snap/bin:$HOME/.local/bin:$PATH
 export KUBECONFIG=/home/shwetank/.kube/kube-config
 
 emulate sh -c 'source /etc/profile'
@@ -80,7 +80,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git docker docker-machine microk8s kubectl helm pip pipenv)
+plugins=(git docker docker-machine microk8s kubectl helm pip pipenv thefuck)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -129,3 +129,5 @@ alias trash='gio trash'
 
 # Alias helm3 to helm to take advantage of zsh helm plugin
 #alias helm='helm3'
+
+export POWERLEVEL9K_INSTANT_PROMPT=off
